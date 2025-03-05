@@ -253,7 +253,7 @@ body {
     display: flex;
     background-color: #dbdada;
     color: black;
-    padding: 20px;
+    padding: 30px;
     margin: 80px 100px 0px 100px;
     border-radius: 10px;
     gap: 20px;
@@ -261,7 +261,9 @@ body {
 }
 
 .mamallapuram-card__image {
-    rotate: 5deg;
+    rotate: 4deg;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -869,7 +871,7 @@ p {
 @media screen and (max-width:700px) {
 
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     /* Navbar */
@@ -934,35 +936,36 @@ p {
 
     .trip-image {
         display: block;
-        position: static;
         overflow: hidden;
+        margin: 50px 20px 0px 20px;
+        padding: 20px;
+        text-align: center;
     }
 
     .trip-image img {
-        width: 800px;
-        margin-bottom: 0px;
+        width: 400px;
+        height: 350px;
     }
 
     .trip-image__desc {
-        display: block;
-        position: static;
-        width: 100%;
+        width: 70%;
+        margin: 0px;
+        text-align: left;
         padding: 30px 0px 20px 20px;
-        background-color: rgb(111, 216, 158);
     }
 
-    /* Dubai-Card */
+    /* Mamallapuram-Card */
 
-    .dubai-card {
-        margin: 50px;
+    .mamallapuram-card {
+        margin: 20px;
     }
 
-    .dubai-card__image {
+    .mamallapuram-card__image {
         rotate: 0deg;
         width: 230px;
     }
 
-    .dubai-card__desc .para {
+    .mamallapuram-card__desc .para {
         display: none;
     }
 
