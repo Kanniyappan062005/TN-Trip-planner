@@ -7,6 +7,12 @@ body {
     font-family: "Lexend", 'Serif';
 }
 
+/* Hidden */
+
+.hidden{
+    display:none;
+}
+
 /* Navbar section */
 
 .navbar {
@@ -100,6 +106,115 @@ body {
     display: none;
 }
 
+/* Sign-in Section */
+
+.overlay {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.sign-in-popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in-heading {
+    font-size: 30px;
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.sign-in {
+    width: 300px;
+    margin-top: 50px;
+    border: black 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    z-index: 4;
+    position: relative;
+}
+
+#sign-in-close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.verify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tick-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.verify a {
+    text-decoration: none;
+    color: rgb(0, 46, 146);
+}
+
+.sign-in-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgb(89, 0, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sign-in-btn:hover{
+    opacity: 0.8;
+}
+
 /* Whereto section */
 
 .whereto__heading {
@@ -146,6 +261,7 @@ body {
 .search-bar-section {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .search-bar {
@@ -189,6 +305,7 @@ body {
     margin: 50px 100px 0px 100px;
     padding: 50px;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .trip-image img {
@@ -736,7 +853,6 @@ p {
 .terms-privacy img {
     width: 40px;
     height: 40px;
-    mix-blend-mode: color-burn;
 }
 
 .terms-privacy p,
@@ -826,12 +942,12 @@ p {
 
 .footer-mobile__about a {
     text-decoration: none;
-    color: #2e2e2e;
+    color: #b9b5b5;
 }
 
 .footer-mobile__about a:hover {
     text-decoration: underline;
-    color: #474747;
+    color: #727272;
 }
 
 .footer-mobile__selection{
