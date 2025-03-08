@@ -1038,10 +1038,12 @@ p {
 
     .search-bar-section input {
         width: 90%;
+        display: inline;
     }
 
     .search-bar i {
         margin-right: 10px;
+        display: inline;
     }
 
     .search-bar__search-btn {
